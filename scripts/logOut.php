@@ -2,7 +2,7 @@
 
 use Longman\TelegramBot\Request;
 
-require '../bootstrap.php';
+require __DIR__ . '/../bootstrap.php';
 
 $telegram = createTelegram();
 
