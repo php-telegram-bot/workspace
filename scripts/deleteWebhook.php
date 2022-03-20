@@ -6,6 +6,6 @@ require '../bootstrap.php';
 
 $telegram = createTelegram();
 
-$response = Request::close();
+$response = Request::deleteWebhook();
 
 echo $response->getDescription() . PHP_EOL;

@@ -9,10 +9,13 @@ $telegram = createTelegram();
 // If there is a webhook, we delete it first
 $telegram->deleteWebhook();
 
+$telegram->useGetUpdatesWithoutDatabase();
+
 while (true) {
 
     try {
 
+        echo "Polling..." . PHP_EOL;
         $telegram->handleGetUpdates([
             'timeout' => 30,
         ]);

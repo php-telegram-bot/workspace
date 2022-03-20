@@ -1,5 +1,7 @@
 <?php
 
+use Longman\TelegramBot\Request;
+
 require 'vendor/autoload.php';
 
 define('BASE_PATH', __DIR__);
@@ -11,6 +13,10 @@ function createTelegram() {
     static $telegram;
 
     if (! $telegram) {
+        if ($botApiUri = env('TELEGRAM_BOT_API_SERVER')) {
+            Request::setCustomBotApiUri($botApiUri);
+        }
+
         $telegram = new \Longman\TelegramBot\Telegram(
             env('TELEGRAM_BOT_TOKEN'),
             env('TELEGRAM_BOT_USERNAME')
