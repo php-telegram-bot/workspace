@@ -1,6 +1,29 @@
+<div id="top"></div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-this-repository">About this repository</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#cloning-the-repository">Cloning the repository</a></li>
+        <li><a href="#working-on-php-telegram-bot">Working on php-telegram-bot</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-docker">Using Docker</a></li>
+    <li><a href="#using-the-bot">Using the bot</a></li>
+  </ol>
+</details>
+
 ## About this repository
 
 This repository is a boilerplate for development of the [php-telegram-bot](https://github.com/php-telegram-bot/core).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -26,6 +49,8 @@ git submodule update --remote --merge
 
 If you want to commit changes to upstream, you can simply do that as anywhere else.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Using Docker
 
 By default the Docker setup launches preconfigured with the following containers:
@@ -46,6 +71,8 @@ After this you can start the containers with
 docker-compose up -d
 ```
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Using the bot
 
 By default there is a /start command.
@@ -54,6 +81,7 @@ So if you've also filled out your `TELEGRAM_BOT_USERNAME` and `TELEGRAM_BOT_TOKE
 
 If successful, you should be able to send a `/start` to your bot.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Manually calling the webserver
 
