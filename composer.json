@@ -10,7 +10,17 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "longman/telegram-bot": "@dev"
+        "longman/telegram-bot": "@dev",
+        "vlucas/phpdotenv": "5.4.x-dev"
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ],
+        "psr-4": {
+            "Longman\\TelegramBot\\Commands\\": "app/Telegram/Commands",
+            "App\\": "app"
+        }
     },
     "repositories": [
         {
