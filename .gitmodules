@@ -1,0 +1,3 @@
+[submodule "packages/php-telegram-bot"]
+	path = packages/php-telegram-bot
+	url = git@github.com:php-telegram-bot/core.git

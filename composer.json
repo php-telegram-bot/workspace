@@ -1,0 +1,24 @@
+{
+    "name": "php-telegram-bot/workspace",
+    "description": "Workspace for development and tests",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tii",
+            "email": "mail@tii.one"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "longman/telegram-bot": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/php-telegram-bot",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
