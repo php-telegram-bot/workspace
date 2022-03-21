@@ -1,4 +1,4 @@
 /vendor/
 .idea
 .env
-logs/*
+logs/*.log
