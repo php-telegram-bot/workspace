@@ -8,4 +8,9 @@ RUN set -eux; \
     apt-get install -y git; \
     install-php-extensions pdo_mysql zip
 
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["php-fpm"]
+
 WORKDIR /app
