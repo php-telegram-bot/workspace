@@ -1,5 +1,5 @@
 /vendor/
 .idea
 .env
-logs/*
+logs/*.log
 docker-compose.override.yml
