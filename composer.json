@@ -10,7 +10,8 @@
     ],
     "require": {
         "longman/telegram-bot": "@dev",
-        "vlucas/phpdotenv": "5.4.x-dev"
+        "php-telegram-bot/fluent-keyboard": "@dev",
+        "vlucas/phpdotenv": "^5.4"
     },
     "autoload": {
         "files": [
@@ -24,10 +25,25 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./packages",
+            "url": "./packages/php-telegram-bot",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./packages/fluent-keyboard",
             "options": {
                 "symlink": true
             }
         }
-    ]
+    ],
+    "require-dev": {
+        "pestphp/pest": "^1.21"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
