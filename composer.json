@@ -8,7 +8,6 @@
             "email": "mail@tii.one"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "longman/telegram-bot": "@dev",
         "vlucas/phpdotenv": "5.4.x-dev"
@@ -25,7 +24,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./packages/php-telegram-bot",
+            "url": "./packages",
             "options": {
                 "symlink": true
             }
